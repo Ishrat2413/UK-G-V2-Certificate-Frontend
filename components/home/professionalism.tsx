@@ -2,7 +2,7 @@ import SectionHeader from "../shared/section-header";
 
 export default function Professionalism() {
   return (
-    <section className='mx-[100px] px-4 py-15'>
+    <section className='mx-6 lg:mx-25 px-4 py-15'>
       <SectionHeader
         title='Professionalism is a Competitive Advantage'
         align='start'

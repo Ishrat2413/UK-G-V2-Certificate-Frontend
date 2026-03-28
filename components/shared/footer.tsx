@@ -188,7 +188,7 @@ const Footer = () => {
             Installations. All rights reserved. Registered in England & Wales |
             Company No: 16076081
           </p>
-          <p className=' text-(--text-muted-foreground)'>
+          <p className=' text-(--text-muted-foreground) pt-3 md:pt-0 lg:pt-0'>
             ICO Registration No: ZC077762 Registered with the Information
             Commissioner’s Office under the Data Protection Act 2018 and UK
             GDPR. Privacy Policy
