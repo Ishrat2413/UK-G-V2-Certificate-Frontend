@@ -5,6 +5,8 @@ interface HeroBannerProps {
   title: string;
   descriptions: string[];
   sectionClassName?: string;
+  contentWrapperClassName?: string;
+  titleWrapperClassName?: string;
   titleClassName?: string;
   descriptionsWrapperClassName?: string;
   descriptionClassName?: string;
@@ -14,6 +16,8 @@ export default function HeroBanner({
   title,
   descriptions,
   sectionClassName,
+  contentWrapperClassName,
+  titleWrapperClassName,
   titleClassName,
   descriptionsWrapperClassName,
   descriptionClassName,
@@ -24,10 +28,11 @@ export default function HeroBanner({
         "bg-background pt-48 lg:pt-70 px-6 lg:px-25 py-15",
         sectionClassName,
       )}>
-      <div>
+      <div className={cn(contentWrapperClassName)}>
         <SectionHeader
           title={title}
           align='start'
+          className={cn(titleWrapperClassName)}
           titleClassName={cn(
             "text-white !text-[48px] !lg:text-[64px]",
             titleClassName,
