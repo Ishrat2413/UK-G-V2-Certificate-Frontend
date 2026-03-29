@@ -50,7 +50,7 @@ export default function Installers() {
             descriptionClassName='max-w-[260px]'
             icon={cardData.icon}
             iconBgClassName='bg-[#B4CDF7]'
-            className='bg-[linear-gradient(110deg,#F5F8FF_0%,#DBEAFE_60%)]'
+            className='bg-[linear-gradient(110deg,#F5F8FF_0%,#DBEAFE_60%)] border border-[#E5E7EB] hover:border-[#b0b1b6]'
             learnMoreHref={cardData.learnMoreHref}
           />
         ))}

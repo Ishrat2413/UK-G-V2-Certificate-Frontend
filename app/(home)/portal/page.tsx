@@ -5,6 +5,7 @@ import HowPlatformWorks from "@/components/portal/how-platform-works";
 import ICOBreach from "@/components/portal/ico-breach";
 import ICORegulations from "@/components/portal/ico-regulations";
 import InstallationCompanies from "@/components/portal/installation-companies";
+import PlatformCapabilities from "@/components/portal/platform-capabilities";
 import PortalBanner from "@/components/portal/portal-banner";
 import RenewablyCompliant from "@/components/portal/renewably-compliant";
 
@@ -20,6 +21,7 @@ export default function PortalPage() {
       <GetCompliant />
       <CorePlatform />
       <HowPlatformWorks />
+      <PlatformCapabilities />
     </>
   );
 }

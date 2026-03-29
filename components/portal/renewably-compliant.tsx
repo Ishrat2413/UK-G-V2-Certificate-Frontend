@@ -31,14 +31,14 @@ export default function RenewablyCompliant() {
   ];
 
   return (
-    <section className='pt-12 mb-12 py-12 px-3'>
+    <section className='pt-12 mb-12 mx-6 lg:mx-25 px-4 py-15'>
       <SectionHeader
         title='How Renewably UK Platform Keeps You Compliant'
         subTitle='Purpose-built for UK installers with ICO compliance as a core design principle'
         subTitleClassName='text-(--text-muted) font-medium text-[16px] max-w-160 mx-auto text-center'
       />
 
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 mt-10 px-6 lg:px-25 py-15'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 mt-10 py-15'>
         {compliantData.map((cardData, index) => (
           <InfoCard
             key={index}
@@ -47,7 +47,7 @@ export default function RenewablyCompliant() {
             description={cardData.description}
             icon={cardData.icon}
             iconBgClassName='bg-[#B4CDF7]'
-            className='bg-[linear-gradient(110deg,#F5F8FF_0%,#DBEAFE_60%)] border border-[#E5E7EB] rounded-[10px]!'
+            className='bg-[linear-gradient(110deg,#F5F8FF_0%,#DBEAFE_60%)] border border-[#E5E7EB] hover:border-[#b0b1b6] rounded-[10px]!'
           />
         ))}
       </div>
