@@ -49,22 +49,24 @@ export default function ComprehensiveInsurance() {
           ))}
         </div>
       </div>
-      <SectionHeader title='Integrated Protection Suite'  className="mt-15 mb-8"/>
+      <SectionHeader
+        title='Integrated Protection Suite'
+        className='mt-15 mb-8'
+      />
       <div className='mx-4'>
-        
-      <p className='text-[#4A5565] font-medium text-[16px] max-w-300 mx-auto text-center'>
-        These insurance products are not optional extras — they form part of the
-        qualification framework required to access Insurance Backed Guarantee
-        services. Installers must maintain adequate levels of Professional
-        Indemnity Insurance (PI), Public Liability Insurance (PL), and Employers
-        Liability Insurance (EL).
-      </p>
+        <p className='text-[#4A5565] font-medium text-[16px] max-w-300 mx-auto text-center'>
+          These insurance products are not optional extras — they form part of
+          the qualification framework required to access Insurance Backed
+          Guarantee services. Installers must maintain adequate levels of
+          Professional Indemnity Insurance (PI), Public Liability Insurance
+          (PL), and Employers Liability Insurance (EL).
+        </p>
 
-      <p className='text-[#4A5565] font-medium text-[16px] max-w-280 mx-auto text-center mt-2'>
-        Bluedrop Services verifies coverage during onboarding and can arrange
-        compliant policies aligned with sector-specific risk profiles and
-        minimum contractual thresholds.
-      </p>
+        <p className='text-[#4A5565] font-medium text-[16px] max-w-280 mx-auto text-center mt-2'>
+          Bluedrop Services verifies coverage during onboarding and can arrange
+          compliant policies aligned with sector-specific risk profiles and
+          minimum contractual thresholds.
+        </p>
       </div>
 
       <div className='flex items-center justify-center pt-6'>
