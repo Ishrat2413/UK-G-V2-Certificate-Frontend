@@ -1,199 +1,97 @@
-import {
-  BadgeCheck,
-  CircleCheckBig,
-  ClipboardCheck,
-  FileCheck,
-  Shield,
-  Star,
-  Users,
-} from "lucide-react";
+import { Check, CircleCheckBig, Lightbulb, Star } from "lucide-react";
 import { InfoCard } from "../shared/info-card";
 import SectionHeader from "../shared/section-header";
 
 export default function PassAudits() {
   const essentialData = [
     {
-      title: "MCS Certification",
-      description:
-        "Micro-generation Certification Scheme - the quality assurance standard for renewable energy installations.",
+      title: "During Your Audit",
       icon: <Star color='#0F47A8' />,
       points: [
         {
-          label: "Required for government funding schemes",
-          icon: (
-            <CircleCheckBig color='var(--text-primary)' className='w-4 h-4' />
-          ),
+          label: "Auditor requests IBG for specific project",
+          icon: <span className='block w-1 h-1 rounded-full bg-background' />,
         },
         {
-          label: "Solar PV, heat pumps, battery storage",
-          icon: (
-            <CircleCheckBig color='var(--text-primary)' className='w-4 h-4' />
-          ),
+          label: "Open mobile app, select project from portal",
+          icon: <span className='block w-1 h-1 rounded-full bg-background' />,
         },
         {
-          label: "Annual surveillance and compliance",
-          icon: (
-            <CircleCheckBig color='var(--text-primary)' className='w-4 h-4' />
-          ),
+          label: "Generate IBG certificate instantly",
+          icon: <span className='block w-1 h-1 rounded-full bg-background' />,
+        },
+        {
+          label: "Display or email certificate immediately",
+          icon: <span className='block w-1 h-1 rounded-full bg-background' />,
         },
       ],
     },
     {
-      title: "TrustMark",
-      description:
-        "Government-endorsed quality scheme for tradespeople working in and around homes.",
-      icon: <BadgeCheck color='#0F47A8' />,
+      title: "The Result",
+      icon: <CircleCheckBig color='#0F47A8' className='w-6! h-6!' />,
       points: [
         {
-          label: "Consumer protection and quality assurance",
-          icon: (
-            <CircleCheckBig color='var(--text-primary)' className='w-4 h-4' />
-          ),
+          label: "Instant proof of compliance provided",
+          icon: <Check color='var(--text-primary)' className='w-2 h-2' />,
         },
         {
-          label: "Required for ECO4 and other schemes",
-          icon: (
-            <CircleCheckBig color='var(--text-primary)' className='w-4 h-4' />
-          ),
+          label: "No follow-up requests or delays",
+          icon: <Check color='var(--text-primary)' className='w-2 h-2' />,
         },
         {
-          label: "Enhanced business credibility",
-          icon: (
-            <CircleCheckBig color='var(--text-primary)' className='w-4 h-4' />
-          ),
-        },
-      ],
-    },
-    {
-      title: "NICEIC / NAPIT",
-      description:
-        "Electrical safety and competent person scheme registration for electrical installations.",
-      icon: <Shield color='#0F47A8' />,
-      points: [
-        {
-          label: "BS 7671 18th Edition compliance",
-          icon: (
-            <CircleCheckBig color='var(--text-primary)' className='w-4 h-4' />
-          ),
+          label: "Auditor satisfied, audit progresses smoothly",
+          icon: <Check color='var(--text-primary)' className='w-2 h-2' />,
         },
         {
-          label: "Self-certification of electrical work",
-          icon: (
-            <CircleCheckBig color='var(--text-primary)' className='w-4 h-4' />
-          ),
-        },
-        {
-          label: "Regular assessment and inspection",
-          icon: (
-            <CircleCheckBig color='var(--text-primary)' className='w-4 h-4' />
-          ),
-        },
-      ],
-    },
-    {
-      title: "Gas Safe Register",
-      description:
-        "Legal requirement for any business carrying out gas work in the UK.",
-      icon: <ClipboardCheck color='#0F47A8' />,
-      points: [
-        {
-          label: "Mandatory for heat pump installations",
-          icon: (
-            <CircleCheckBig color='var(--text-primary)' className='w-4 h-4' />
-          ),
-        },
-        {
-          label: "Hybrid system qualifications",
-          icon: (
-            <CircleCheckBig color='var(--text-primary)' className='w-4 h-4' />
-          ),
-        },
-        {
-          label: "Annual renewal and competency checks",
-          icon: (
-            <CircleCheckBig color='var(--text-primary)' className='w-4 h-4' />
-          ),
-        },
-      ],
-    },
-    {
-      title: "HIES Membership",
-      description:
-        "Home Insulation & Energy Systems Quality Assured Contractors Scheme.",
-      icon: <Users color='#0F47A8' />,
-      points: [
-        {
-          label: "Consumer protection and dispute resolution",
-          icon: (
-            <CircleCheckBig color='var(--text-primary)' className='w-4 h-4' />
-          ),
-        },
-        {
-          label: "Insurance Backed Guarantee requirements",
-          icon: (
-            <CircleCheckBig color='var(--text-primary)' className='w-4 h-4' />
-          ),
-        },
-        {
-          label: "Code of Practice compliance",
-          icon: (
-            <CircleCheckBig color='var(--text-primary)' className='w-4 h-4' />
-          ),
-        },
-      ],
-    },
-    {
-      title: "RECC Membership",
-      description:
-        "Renewable Energy Consumer Code - consumer protection for renewable energy installations.",
-      icon: <FileCheck color='#0F47A8' />,
-      points: [
-        {
-          label: "Sales and marketing standards",
-          icon: (
-            <CircleCheckBig color='var(--text-primary)' className='w-4 h-4' />
-          ),
-        },
-        {
-          label: "Customer service requirements",
-          icon: (
-            <CircleCheckBig color='var(--text-primary)' className='w-4 h-4' />
-          ),
-        },
-        {
-          label: "Alternative dispute resolution",
-          icon: (
-            <CircleCheckBig color='var(--text-primary)' className='w-4 h-4' />
-          ),
+          label: "Professional impression demonstrates control",
+          icon: <Check color='var(--text-primary)' className='w-2 h-2' />,
         },
       ],
     },
   ];
   return (
-    <section className='mx-6 lg:mx-35 px-4 pt-15'>
+    <section className='mx-6 lg:mx-35 px-4 py-15'>
       <SectionHeader
         title='Pass PAS Audits Instantly with On-Site IBG Generation'
         titleClassName='max-w-170 mx-auto'
         subTitle='When auditors arrive for your PAS 2030 compliance inspection, they often request evidence of Insurance Backed Guarantees for completed installations. Without instant access to IBG certificates, you face delays, follow-up requests, and potential non-compliance findings.'
         subTitleClassName='text-(--text-muted) max-w-220 mx-auto text-[18px] font-interFont'
       />
+      <InfoCard
+        title='Instant Compliance During Audits'
+        titleClassName='text-[22px]'
+        subtitle="With Renewably UK's mobile portal, you can generate and produce IBG certificates on-site in seconds during your audit. No waiting, no follow-ups, no delays."
+        subtitleClassName='text-(--text-muted)! text-base'
+        icon={<CircleCheckBig color='#0F47A8' className='w-8! h-8!' />}
+        iconBgClassName='bg-none'
+        iconWrapperClassName='hidden md:flex'
+        className='bg-white md:-m-5'
+      />
 
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 pt-15'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 pt-4'>
         {essentialData.map((cardData, index) => (
           <InfoCard
             key={index}
             title={cardData.title}
             titleClassName='text-xl'
-            description={cardData.description}
-            descriptionClassName='max-w-170 text-base pb-4'
             icon={cardData.icon}
             iconBgClassName='bg-[#B4CDF7]'
-            className='bg-white border border-[#E5E7EB] hover:border-[#b0b1b6] rounded-[10px]!'
+            className='bg-[linear-gradient(110deg,#F5F8FF_0%,#DBEAFE_60%)] border border-[#E5E7EB] hover:border-[#b0b1b6] rounded-[10px]!'
             points={cardData.points}
             pointClassName='text-[#6B7280] text-base font-medium'
           />
         ))}
       </div>
+      <InfoCard
+        title='Why This Matters for Accreditation Bodies'
+        titleClassName='text-[22px]'
+        subtitle="PAS2030/2035, MCS, and TrustMark auditors need to verify that you're providing customers with required guarantees. Being able to instantly generate and show IBG certificates demonstrates robust systems, professional compliance infrastructure, and proves you're meeting consumer protection obligations in real-time"
+        subtitleClassName='text-(--text-muted)! text-base'
+        icon={<Lightbulb color='#0F47A8' className='w-8! h-8!' />}
+        iconBgClassName='bg-none'
+        iconWrapperClassName='hidden md:flex'
+        className='bg-white md:-m-5'
+      />
     </section>
   );
 }

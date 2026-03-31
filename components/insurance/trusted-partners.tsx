@@ -14,7 +14,7 @@ export default function TrustedPartners() {
     <section className='mx-6 lg:mx-35 px-4 pt-15'>
       <SectionHeader title='Trusted Partners & Accreditations' />
       <div>
-        <div className='flex flex-nowrap justify-center items-center min-w-150'>
+        <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 justify-center items-center'>
           {partnerImages.map((src, index) => (
             <div key={index} className='mx-4 md:mx-6 my-3'>
               <Image
