@@ -45,6 +45,7 @@ import {
   Sun,
   Check,
   Minus,
+  DoorOpen
 } from "lucide-react";
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
@@ -359,7 +360,7 @@ const CATEGORIES: Category[] = [
   {
     id: "windows",
     label: "Windows & Doors",
-    icon: <AppWindow className='w-4 h-4' color='#0F47A8' />,
+    icon: <DoorOpen className='w-4 h-4' color='#0F47A8' />,
     measures: [
       {
         label: "Doors (Composite, Timber, uPVC)",
@@ -596,6 +597,7 @@ export function MeasuresTableModal({
               {/* Category filter */}
               <div className='w-full sm:w-56 sm:ml-auto'>
                 <Select
+
                   value={selectedCategory}
                   onValueChange={setSelectedCategory}
                 >

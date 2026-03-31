@@ -94,8 +94,8 @@ export default function PassAudits() {
         className='bg-white md:-m-5'
       />
       <div className='flex items-center justify-center pt-6'>
-        <Button className='bg-background text-white rounded-[6px] px-6 py-5 cursor-pointer text-base'>
-          <Zap color='#FFFFFF' /> Learn More About Mobile IBG Generation
+        <Button className='bg-background text-white rounded-[6px] px-6 py-2 cursor-pointer text-base w-full max-w-64 md:max-w-100 h-auto whitespace-normal text-center leading-snug'>
+          <Zap color='#FFFFFF' className='shrink-0' /> Learn More About Mobile IBG Generation
         </Button>
       </div>
     </section>
