@@ -1,5 +1,7 @@
+import AskedQuestions from "@/components/contact/asked-questions";
 import ContactBanner from "@/components/contact/contact-banner";
 import ContactContent from "@/components/contact/contact-content";
+import TrustedCompliant from "@/components/contact/trusted-compliant";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -18,6 +20,8 @@ export default function Contact() {
     <>
       <ContactBanner />
       <ContactContent />
+      <TrustedCompliant />
+      <AskedQuestions />
     </>
   );
 }
