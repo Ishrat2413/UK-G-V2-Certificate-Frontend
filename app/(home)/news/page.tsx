@@ -1,7 +1,9 @@
+import FCAInsurance from "@/components/news/fca-insurance";
 import FeaturedNews from "@/components/news/featured-news";
 import NewsBanner from "@/components/news/news-banner";
 import RecentNews from "@/components/news/recent-news";
 import StayAhead from "@/components/news/stay-ahead";
+import StayUpdated from "@/components/news/stay-updated";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -23,6 +25,8 @@ export default function News() {
       <StayAhead />
       <FeaturedNews />
       <RecentNews />
+      <FCAInsurance />
+      <StayUpdated />
     </>
   );
 }
