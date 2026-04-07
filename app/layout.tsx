@@ -1,6 +1,8 @@
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { PrivacyPolicyModalProvider } from "@/components/shared/privacy-policy-modal-provider";
+import CookieConsentBanner from "@/components/shared/cookie-consent-banner";
 import type { Metadata, Viewport } from "next";
+import { cookies } from "next/headers";
 import { DM_Sans, Geist, Geist_Mono, Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
@@ -41,11 +43,20 @@ export const viewport: Viewport = {
   themeColor: "#ffffff",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const cookieStore = await cookies();
+  const consentCookie = cookieStore.get("renewably_cookie_consent")?.value;
+  const initialConsent =
+    consentCookie === "accepted"
+      ? "accepted"
+      : consentCookie === "rejected"
+        ? "rejected"
+        : null;
+
   return (
     <html
       lang='en'
@@ -61,7 +72,10 @@ export default function RootLayout({
             '"SF Pro Display", "SF Pro Text", "SF Pro", var(--font-dm-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
         }}>
         <TooltipProvider>
-          <PrivacyPolicyModalProvider>{children}</PrivacyPolicyModalProvider>
+          <PrivacyPolicyModalProvider>
+            {children}
+            <CookieConsentBanner initialConsent={initialConsent} />
+          </PrivacyPolicyModalProvider>
         </TooltipProvider>
         <Script id='register-sw' strategy='afterInteractive'>
           {`
