@@ -1,5 +1,6 @@
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import { InfoCard } from "@/components/shared/info-card";
+import Link from "next/link";
 
 const contactInfo = [
   {
@@ -30,10 +31,10 @@ const contactInfo = [
 ];
 
 const quickLinks = [
-  "Insurance & Guarantees",
-  "Funding Options",
-  "Installer Portal",
-  "Accreditation Support",
+  { title: "Insurance & Guarantees", href: "/insurance" },
+  { title: "Funding Options", href: "/funding" },
+  { title: "Installer Portal", href: "/platform" },
+  { title: "Accreditation Support", href: "/accreditation" },
 ];
 
 export default function QuickAccess() {
@@ -64,7 +65,7 @@ export default function QuickAccess() {
               isAddress ? "px-4 py-3 space-y-1" : "px-4 -py-3 space-y-1"
             }
             cardBg='bg-blue-50 text-[#0f172a]'
-            iconWrapperClassName={`shrink-0 bg-blue-100 rounded-full w-12 h-12 [&>svg]:w-6 [&>svg]:h-6${isAddress ? " mt-0.5" : ""}`}
+            iconWrapperClassName={`shrink-0 bg-blue-100 hover:bg-blue-100 rounded-full w-12 h-12 [&>svg]:w-6 [&>svg]:h-6${isAddress ? " mt-0.5" : ""}`}
             titleClassName='text-base font-medium text-gray-900'
             descriptionClassName='text-sm leading-snug break-words text-gray-800'
           />
@@ -79,11 +80,12 @@ export default function QuickAccess() {
         </p>
         <div className='flex flex-col gap-2'>
           {quickLinks.map((link) => (
-            <button
-              key={link}
-              className='text-left text-sm text-white bg-[#FFFFFF33] hover:bg-[#FFFFFF44] transition rounded-[10px] px-4 py-2.5 font-medium'>
-              {link}
-            </button>
+            <Link
+              href={link.href}
+              key={link.title}
+              className="className='text-left text-sm text-white bg-[#FFFFFF33] hover:bg-[#FFFFFF44] transition rounded-[8px] px-4 py-2.5 font-medium cursor-pointer'">
+              <button key={link.title}>{link.title}</button>
+            </Link>
           ))}
         </div>
       </div>
